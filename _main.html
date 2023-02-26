@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT 1</title>
+    <style>
+        body{
+            background:url('bg.jpg');
+            padding: 0px;
+            margin: 0px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            color: aliceblue;
+            font-family:sans-serif;
+        }
+
+        .left{
+            display:inline-block;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        .left img{
+            width: 225px;
+            filter: invert(100%);
+        }
+
+        .left div{
+            line-height: 20px;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .mid{
+            display: block;
+            margin: 30px auto;
+            width: 44%;
+            position: sticky;
+            top: 5px;
+            text-align: center;
+        }
+
+        .navbar{display: inline-block;}
+
+        .navbar li{
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        .navbar li a{
+            color: rgb(158, 243, 243);
+            text-decoration: none;
+        }
+
+        .navbar li a:hover{
+            color: lavender;
+            text-decoration: underline;
+        }
+
+        .right{
+            display:inline-block;
+            position: absolute;
+            right: 30px;
+            top: 30px;
+        }
+
+        .cont{
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid rgb(255, 255, 255);
+            background-color: silver;
+            border-radius: 25px;
+            width: 157px;
+            font-size: 15px;
+            font-weight:bold;
+            text-decoration: none;
+        }
+
+        .cont a{text-decoration: none;}
+
+        .cont:hover{background-color: gray;}
+
+        .cont a:hover{color: blue;}
+
+        .chat{
+            position: fixed;
+            bottom: 10px;
+            right: 30px;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid rgb(255, 255, 255);
+            background-color: silver;
+            border-radius: 25px;
+            width: 157px;
+            font-size: 15px;
+            font-weight:bold;
+            text-decoration: none;        
+        }
+
+        .chat a{text-decoration: none;}
+
+        .chat:hover{background-color: gray;}
+
+        .chat a:hover{color: blue;}
+
+        h2{
+            text-align: center;
+            font-weight: bolder;
+            color: lightcyan;
+        }
+
+        .container{
+            border: 2px solid grey;
+            margin: 20px;
+            padding: 20px;
+            display: block;
+            margin: 200px auto;
+            width: 33%;
+            border-radius: 5px;
+        }
+
+        .container .info input{
+            display: block;
+            border: 2px solid rgb(156, 156, 156);
+            margin: 9px auto;
+            padding: 5px;
+            width: 500px;
+            height: 20px;
+            text-align: center;
+            font-family:sans-serif;
+            border-radius: 10px;
+
+        }
+
+        .container .button input{
+            display: inline-block;
+            border: 2px solid rgb(115, 2, 119);
+            margin: 20px auto;
+            text-align: center;
+            padding: 15px;
+            width: 150px;
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: rgb(0, 0, 34);
+            color: aliceblue;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .container .button{margin:auto 150px;}
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+
+        <div class="left">
+            <img src="logo.jpg">
+            <div>SS FITNESS</div>
+        </div>
+    
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PROGRAMS</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">SCHEDULE</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">COACHES</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+        </div>
+    
+        <div class="right">
+            <button class="cont"><a href="#">CONTACT US</a></button>
+        </div>
+        
+        <div class="right">
+            <button class="chat"><a href="#">CHAT WITH US</a></button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>JOIN THE BEST GYM IN PUNE</h2>
+        <form action="new.cpp">
+            <div class="info">
+                <input type="text" placeholder="ENTER YOUR NAME">
+            </div>
+            <div class="info">
+                <input type="text" placeholder="ENTER YOUR AGE">
+            </div>
+            <div class="info">
+                <input type="text" placeholder="ENTER YOUR GENDER">
+            </div>
+            <div class="info">
+                <input type="text" placeholder="ENTER YOUR LOCALITY">
+            </div>
+            <div class="info">
+                <input type="text" placeholder="ENTER YOUR EMAIL ID">
+            </div>
+            <div class="info">
+                <input type="text" placeholder="ENTER YOUR PHONE NUMBER">
+            </div>
+
+            <div class="button">
+                <input type="submit" value="SUBMIT">
+                <input type="reset" value="CLEAR">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
